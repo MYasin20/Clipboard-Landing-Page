@@ -1,0 +1,509 @@
+
+body {
+  margin: 0;
+  font-family: 'Bai Jamjuree', sans-serif;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+
+a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+header {
+  background: url("/images/bg-header-mobile.png");
+  height: 363px;
+  position: relative;
+}
+
+header svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  text-align: center;
+  max-width: 375px;
+}
+
+#intro {
+  margin-top: -6.25em;
+}
+
+
+#intro, #snippets, #workflow, #clipboard {
+  margin-bottom: 9.375em;
+}
+
+.txt-md, h4 {
+  color: hsl(210, 10%, 33%);
+  font-size: 30px;
+  padding: 0 0.5em;
+}
+
+.txt-sm {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.7;
+  padding: 0 2em;
+  margin-bottom: 3em;
+}
+
+.download-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  margin: 10px 0;
+  border-radius: 1.9em;
+  border: none;
+  width: 85%;
+  max-width: 220px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: #189a88 0px 4px 0px, rgb(0 0 0 / 23%) 0px 3px 6px;
+}
+
+.btn-ios:hover, .btn-ios:focus {
+  background-color: #2edbc1 ;
+}
+
+.btn.btn-mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: #4b56a7 0px 3px 0px, #0000003b 0px 3px 6px
+}
+
+.btn-mac:hover, .btn-mac:focus {
+  background-color: #7484ff ;
+}
+
+/* SNIPPETS */
+
+#snippets img {
+  margin: 3rem 0 2rem 0;
+  max-width: 270px;
+  width: 100%;
+  /* width: 270px;
+  max-width: 100%; */
+}
+
+#snippets .txt-md {
+  margin-bottom: 0;
+}
+
+
+/* ACCESS CLIPBOARDS */
+
+
+#access-clipboard img {
+  margin: 3em 0;
+  width: 270px;
+}
+
+/* WORKFLOW */
+
+.outer {
+  margin: 6.25em 0;
+}
+
+.inner {
+  margin-bottom: 3.125em;
+}
+
+.companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.companies img {
+  width: 120px;
+  margin-bottom: 4.375em;
+}
+
+.companies img:nth-of-type(2) {
+  width: 100px;
+}
+
+.companies img:nth-of-type(4) {
+  width: 90px;
+}
+
+.companies img:nth-of-type(5) {
+  width: 85px;
+}
+
+/* CLIPBOARD */
+
+#clipboard .txt-sm {
+  padding: 0 2.1875em;
+}
+
+.footer-container {
+  border-top: 2px solid #f4f4f4;
+  background-color: hsl(206,41%,97%);
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+.footer-logo {
+  width: 50px;
+  margin-bottom: 2.5em;
+}
+
+li {
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.sc-icon {
+  margin-top: 1.5625em;
+  margin-right: 2.1875em;
+  cursor: pointer;
+}
+
+.sc-icon:last-child {
+  margin-right: 0;
+}
+
+svg.sc-icon path:hover{
+  fill: hsl(171, 66%, 44%);
+}
+
+/* -----------------------RESPONSIVE (375px)768px---------------------- */
+/* -----------------------RESPONSIVE (375px)768px---------------------- */
+/* -----------------------RESPONSIVE (375px)768px---------------------- */
+
+@media (min-width: 375px) {
+  header {
+    background: url("/images/bg-header-desktop.png");
+    background-size: cover;
+    margin-bottom: 4.0625em;
+  }
+
+  #container {
+    max-width: 100%;
+  }
+}
+
+/* -----------------------RESPONSIVE 768px---------------------- */
+/* -----------------------RESPONSIVE 768px---------------------- */
+/* -----------------------RESPONSIVE 768px---------------------- */
+
+@media (min-width: 768px) {
+  .txt-md, h4 {
+    font-size: 24px;
+  }
+
+  /* INTRO */
+
+  #intro .txt-sm {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 55%;
+    font-size: 12px;
+  }
+
+  .download-btn {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 200px;
+    margin: 10px 10px;
+    font-size: 14px;
+  }
+
+  /* SNIPPETS */
+
+  #snippets > .txt-sm { /* only have 1 .txt-sm class inside the snippets section*/
+    width: 60%;
+    margin: 1.5em auto;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .snippets-content {
+    display: flex;
+  }
+
+  #snippets img {
+    max-width: 450px;
+    position: relative;
+    right: 30px;
+  }
+
+  .contents {
+    text-align: left;
+    margin-top: 3.25em;
+    margin-left: 0;
+  }
+
+  .snippets-content .contents .txt-md {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .snippets-content .txt-sm {
+    padding: 0;
+    padding-bottom: 2em;
+    text-align: left;
+    margin: 10px 0;
+    max-width: 270px;
+    font-size: 12px; 
+  }
+
+  /* ACCESS CLIPBOARD */
+
+  #access-clipboard .txt-sm {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 14px;
+  }
+
+  #access-clipboard img {
+    width: 505px;
+  }
+
+  /* WORKFLOW */
+
+  #workflow {
+    width: 100%;
+  }
+
+  #workflow .outer {
+    max-width: 90%; /* NEW ONE */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  #workflow .txt-sm {
+    margin-bottom: 5em;
+    font-size: 14px;
+  }
+
+  #workflow .inner {
+    width: 33%; /* NEW ONE */
+  }
+
+  .outer .inner h4 {
+    font-size: 18px; /* NEW ONE */
+  }
+
+  .outer .inner .txt-sm {
+    font-size: 13px;
+    padding: 0 0.2em;
+    margin: 0 10px 6em; /* NEW ONE */
+  }
+
+  .companies {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /* CLIPBOARD */
+
+  #clipboard > .txt-sm {
+    padding: 0;
+    width: 60%;
+    margin: 2em auto;
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+
+  .footer-container {
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 1.5em;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  ul .set {
+    margin-right: 5.25em;
+  }
+
+  .sc-icon {
+    margin-top: 0;
+    margin-right: 1.1875em;
+  }
+}
+
+/* -----------------------RESPONSIVE 960px---------------------- */
+/* -----------------------RESPONSIVE 960px---------------------- */
+/* -----------------------RESPONSIVE 960px---------------------- */
+
+@media (min-width: 1024px) {
+  .txt-md, h4 {
+    font-size: 30px;
+  }
+
+  #intro .txt-sm {
+    margin-bottom: 3em;
+    width: 40%;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 220px;
+    font-size: 15px;
+  }
+
+  /* SNIPPETS */
+
+  #snippets > .txt-sm {
+    width: 55%;
+    font-size: 14px;
+  }
+
+  .contents {
+    margin-top: 5.25em;
+    margin-left: 1.5em;
+  }
+
+  #snippets img {
+    max-width: 600px;
+  }
+
+  .snippets-content .contents .txt-md {
+    font-size: 23px;
+  }
+
+  .snippets-content .txt-sm {
+    max-width: 300px;
+    font-size: 14px;
+  }
+
+  /* ACCESS CLIPBOARD */
+
+  #access-clipboard .txt-sm {
+    width: 55%;
+  }
+
+  #access-clipboard img {
+    width: 705px;
+  }
+
+  /* FOOTER */
+
+  ul .set {
+    margin-right: 6.25em;
+  }
+
+}
+
+/* -----------------------RESPONSIVE 1200px---------------------- */
+/* -----------------------RESPONSIVE 1200px---------------------- */
+/* -----------------------RESPONSIVE 1200px---------------------- */
+
+@media (min-width: 1150px) {
+  /* INTRO */
+  .txt-md, h4 {
+    font-size: 35px;
+  }
+
+  #intro .txt-sm {
+    margin-bottom: 3em;
+    width: 40%;
+    font-size: 16px;
+  }
+
+  /* SNIPPETS */
+
+  #snippets > .txt-sm { /* only have 1 .txt-sm class inside the snippets section*/
+    width: 41%;
+    font-size: 16px;
+  }
+
+  #snippets img {
+    max-width: 752px;
+  }
+
+  .contents {
+    margin-top: 6.25em;
+    margin-left: 4em;
+  }
+
+  .snippets-content .contents .txt-md {
+    font-size: 35px;
+  }
+
+  .snippets-content .txt-sm {
+    max-width: 400px;
+    font-size: 16px;
+  }
+
+  /* ACCESS CLIPBOARD */
+
+  #access-clipboard .txt-sm {
+    width: 45%;
+    font-size: 16px;
+  }
+
+  #access-clipboard img {
+    width: 905px;
+  }
+
+  /* WORKFLOW */
+
+  #workflow .txt-sm {
+    font-size: 16px;
+  }
+
+  #workflow .outer {
+    max-width: 85%;
+  }
+
+  #workflow .inner {
+    width: 30%;
+  }
+
+  .outer .inner h4 {
+    font-size: 24px;
+  }
+
+  .outer .inner .txt-sm {
+    font-size: 14px;
+    padding: 0 0.2em;
+  }
+
+  /* CLIPBOARD */
+
+  #clipboard > .txt-sm {
+    width: 40%;
+    font-size: 16px;
+  }
+}
