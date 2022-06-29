@@ -20,15 +20,15 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](/screenshots/desktop-version.png)
 ![](/screenshots/mobile-version.png)
 
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/MYasin20/Clipboard-Landing-Page)
+- Live Site URL: (https://endearing-meringue-d577a1.netlify.app)
 
 
 ### Built with
@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Muhammad Yasin](https://www.your-site.com)
+- Website - [Muhammad Yasin](https://endearing-meringue-d577a1.netlify.app)
 - Frontend Mentor - [@MYasin20](https://www.frontendmentor.io/profile/MYasin20)
